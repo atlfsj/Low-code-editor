@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // 使项目成为可合成的，可用于构建引用
+    "composite": true,
+    // 指定模块代码生成方式为 ESNext
+    "module": "ESNext",
+    // 指定模块解析策略为 Node.js 风格
+    "moduleResolution": "Node",
+    // 允许合成默认导入，即使模块没有默认导出
+    "allowSyntheticDefaultImports": true
+  },
+  // 包含的文件和文件夹
+  "include": ["vite.config.ts"]
+}

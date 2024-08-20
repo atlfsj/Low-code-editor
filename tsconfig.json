@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // 允许对 UMD 模块进行全局访问
+    "allowUmdGlobalAccess": true,
+    // 设置 ECMAScript 目标版本为 ESNext
+    "target": "ESNext",
+    // 使用 define 属性来声明类字段
+    "useDefineForClassFields": true,
+    // 编译时包含的库文件
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // 禁止编译 JavaScript 文件
+    "allowJs": false,
+    // 跳过库文件类型检查
+    "skipLibCheck": true,
+    // 不允许 ES 模块的默认导入
+    "esModuleInterop": false,
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true,
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 强制文件名大小写一致
+    "forceConsistentCasingInFileNames": true,
+    // 指定模块代码生成方式
+    "module": "ESNext",
+    // 指定模块解析策略
+    "moduleResolution": "Node",
+    // 允许导入 JSON 文件
+    "resolveJsonModule": true,
+    // 启用隔离模块
+    "isolatedModules": true,
+    // 禁止生成编译输出文件
+    "noEmit": true,
+    // 指定 JSX 代码生成方式，使用新的 React JSX 转换
+    "jsx": "react-jsx",
+    // 设置路径别名
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  // 包含的文件和文件夹
+  "include": ["src", "**/*.ts", "**/*.tsx"], // 默认只支持 ts 文件，这里支持 tsx 文件
+  // 项目引用
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
